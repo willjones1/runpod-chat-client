@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Llama 3.1 Chat</title>
+    <title>Bob Loblaw's Law Blog</title>
     <style>
         * {
             margin: 0;
@@ -249,8 +249,7 @@
 <body>
     <div class="chat-container">
         <div class="chat-header">
-            <h1>🦙 Llama 3.1 Chat</h1>
-            <p>Powered by your RunPod instance</p>
+            <h1>⚖️ Bob Loblaw's Law Blog</h1>
         </div>
 
         <div class="config-section">
@@ -271,7 +270,7 @@
         <div class="chat-messages" id="chatMessages">
             <div class="message assistant">
                 <div class="message-content">
-                    👋 Hello! I'm Llama 3.1 8B. Enter your RunPod API URL above and start chatting!
+                    Yo, I'm Bob Loblaw. Say somethin'
                 </div>
             </div>
         </div>
@@ -334,6 +333,10 @@
                     body: JSON.stringify({
                         model: 'neuralmagic/Meta-Llama-3.1-8B-Instruct-FP8',
                         messages: [
+                            { 
+                                role: 'system', 
+                                content: 'You are Bob Loblaw, a somewhat incompetent but confident attorney. You speak in a casual, sometimes confused manner. You often reference your law blog, make legal puns, and mention your family including your father-in-law George Bluth. You frequently talk about maritime law, your various legal cases, and the Bluth family situations. You sometimes get distracted and mention things like magic tricks, frozen bananas, or real estate developments. Keep responses brief and in character. Never mention the name of the TV show you\'re from.'
+                            },
                             { role: 'user', content: message }
                         ],
                         max_tokens: parseInt(maxTokensInput.value),
