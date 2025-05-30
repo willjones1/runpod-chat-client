@@ -2,11 +2,13 @@
 
 A beautiful web-based chat interface for communicating with RunPod's hosted language models, plus a Python CLI client.
 
+🌐 **[Try it live on GitHub Pages →](https://willjones1.github.io/runpod-chat-client/)**
+
 ## Description
 
 This project provides two ways to interact with RunPod instances running the `neuralmagic/Meta-Llama-3.1-8B-Instruct-FP8` model:
 
-1. **Web Interface** - A modern, responsive chat UI (`llama-chat.html`)
+1. **Web Interface** - A modern, responsive chat UI (`index.html`)
 2. **Python CLI** - A command-line script for API testing (`runpod_chat.py`)
 
 ## Features
@@ -28,8 +30,14 @@ This project provides two ways to interact with RunPod instances running the `ne
 
 ### Web Interface (Recommended)
 
+**Option 1: Use the hosted version**
+- Visit: https://willjones1.github.io/runpod-chat-client/
+- Enter your RunPod API URL
+- Start chatting!
+
+**Option 2: Run locally**
 1. Download or clone this repository
-2. Open `llama-chat.html` in your web browser
+2. Open `index.html` in your web browser
 3. Enter your RunPod API URL in the configuration field
 4. Start chatting!
 
